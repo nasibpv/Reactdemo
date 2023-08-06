@@ -7,7 +7,7 @@ import { MdOutlineProductionQuantityLimits} from 'react-icons/md';
 function Header() {
   return (
     <>
-        <Navbar bg="primary" data-bs-theme="dark" style={{}}>
+        <Navbar bg="primary" data-bs-theme="dark" style={{width:'auto'}}>
         <Container>
           <Navbar.Brand href="/Reactdemo"><MdOutlineProductionQuantityLimits style={{width:"20%",height:"30px"}}/>X<strong className='text-info'>in</strong>Store</Navbar.Brand>
           <Nav className="me-auto">

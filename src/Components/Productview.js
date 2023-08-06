@@ -21,7 +21,7 @@ function Productview() {
     product?(
       <Row >
         <Col lg={6} md={6} style={{minHeight:"88vh"}}>
-        <Card style={{ width: 'auto',  }}>
+        <Card style={{ width: 'w-100',  }}>
       <Card.Img variant="top" src={product.image} style={{height:"400px",width:"80%"}}className='container'/>
       <Card.Body >
         <Row className='container'>
