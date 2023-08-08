@@ -28,9 +28,6 @@ function Home() {
       dispatch(productList())
     },[])
     const {products}=useSelector(state=>state.productReducer)
-
-    // console.log(products);
-
   return (
     <Row className='ps-3 w-100'>
       {

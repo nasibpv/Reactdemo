@@ -19,18 +19,18 @@ function Productview() {
 <>
 {
     product?(
-      <Row >
-        <Col lg={6} md={6} style={{minHeight:"88vh"}}>
-        <Card style={{ width: 'w-100',  }}>
+      <Row className='w-100' >
+        <Col lg={6} md={6} style={{minHeight:"88vh",padding:"0"}}>
+        <Card style={{ width: 'auto',  }}>
       <Card.Img variant="top" src={product.image} style={{height:"400px",width:"80%"}}className='container'/>
       <Card.Body >
         <Row className='container'>
-         <Col> <Button variant="danger p-3" >CANCEL</Button></Col>
+         <Col> <Button variant="danger p-3" >ADD TO CART</Button></Col>
           <Col><Button variant="primary p-3">BUY NOW</Button></Col>
         </Row>
       </Card.Body>
     </Card></Col>
-        <Col lg={6} md={6}>
+        <Col lg={6} md={6} style={{padding:"0"}}>
         <Card style={{ width: 'auto' ,border:"none"}} className='text-start'>
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>

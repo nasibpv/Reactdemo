@@ -10,8 +10,6 @@
  .card-title{
     font-weight: bold;
  }
- .card-img:hover{
- /* width: 13rem;
- height: 190px; */
- transform: scale(1.01);
+ .card:hover .card-img{
+   transform: scale(1.03);
  }
