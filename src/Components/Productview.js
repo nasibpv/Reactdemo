@@ -11,7 +11,7 @@ import ReadMore from './ReadMore';
 
 function Productview() {
     const params=useParams()
-    console.log(params);
+    // console.log(params);
     const {products}=useSelector(state=>state.productReducer)
     const product= products.find(item=>item.id==params.id)
 

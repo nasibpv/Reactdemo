@@ -32,7 +32,7 @@ function Home() {
     <Row className='ps-3 w-100'>
       {
         products.map(item => (
-          <Col lg={2} md={4} sm={6} xsm={6}>
+          <Col lg={2} md={4} sm={6} xsm={6} id='product-div'>
             <Products prodData={item}></Products>
           </Col>
         ))

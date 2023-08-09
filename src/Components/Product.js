@@ -6,10 +6,10 @@ function Product({prodData}) {
   return (
     <div>
           <Link to={`/product/${prodData.id}`} style={{textDecoration:"none", color:"black"}}>
-         <Card style={{ width: '13rem',height:"360px" }} className='card p-1'>
-             <Card.Img variant="top" src={prodData.image}  style={{height:'170px'}} className='card-img'/>
+         <Card style={{ height:"370px" }} id='product-card' className='card p-1'>
+             <Card.Img variant="top" src={prodData.image}  style={{height:'170px'}} id='product-image'  className='card-img'/>
               <Card.Body>
-               <Card.Text className='card-title' style={{}}>{prodData.title}</Card.Text>
+               <Card.Text className='card-title' id='product-title' style={{}}>{prodData.title}</Card.Text>
                 <Card.Subtitle><strong className="text-success">from </strong>{prodData.price}</Card.Subtitle>
                 <Card.Text>{prodData.category}</Card.Text>
                 {/* <Button variant="primary">Go somewhere</Button> */}

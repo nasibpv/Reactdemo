@@ -6,10 +6,63 @@
  margin: 10px;
  transform: scale(1.01);
  padding-top:8px;
+height: 360px;
+ width: "13rem";
+
  }
+
+ 
  .card-title{
     font-weight: bold;
  }
  .card:hover .card-img{
    transform: scale(1.03);
+ }
+ @media screen and (max-width: 450px){
+    
+  #product-card{
+      width: 90%;
+      padding: 5px;
+      height: 150px;
+      margin: 10px;
+      margin-left: 20px;
+  }
+  #product-div{
+    
+    /* margin-left: 15px; */
+    padding: 0;
+  }
+  #product-image{
+    /* align-items: center; */
+    margin-left: 15px;
+    margin-top: 10px;
+    height:220px ;
+    width: 90%;
+  }
+ }
+ @media screen and (max-width: 575px){
+    
+  #product-card{
+      width: 82%;
+      padding: 5px;
+      height: 150px;
+      margin: 10px;
+      margin-left: 50px;
+  }
+  #product-div{
+    
+    /* margin-left: 15px; */
+    padding: 0;
+  }
+  #product-image{
+    /* align-items: center; */
+    margin-left: 15px;
+    margin-top: 10px;
+    height:220px ;
+    width: 90%;
+    padding: 12px;
+  }
+  #product-title{
+    font-size: 22px;
+  }
  }
