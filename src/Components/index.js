@@ -13,10 +13,14 @@ function CartButtons({product}) {
         return cartList?.find((item)=>item?.id===product?.id)?.count
     },[cartList])
 // console.log(cartCount);
+
+    function Buynow(){
+        alert('Currently out of stock for you ')
+    }
   return (
     <>  
            <Col>{cartCount>0 ?<AfterCart product={product} />:<BeforeCart product={product}/>}</Col>
-    <Col><Button variant="primary p-3">BUY NOW</Button></Col>
+    <Col><Button onClick={Buynow} variant="primary p-3">BUY NOW</Button></Col>
 </>
   )
 }

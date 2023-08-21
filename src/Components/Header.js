@@ -31,6 +31,8 @@ export function Header() {
              <Link to={'/product-category/102'} style={{textDecoration:"none", color:"black"}}> <NavDropdown.Item href='/product-category/102'>Jewelery</NavDropdown.Item></Link>
               {/* <NavDropdown.Divider /> */}
             <Link to={'/product-category/103'} style={{textDecoration:"none", color:"black"}}>  <NavDropdown.Item href='/product-category/103'>Electronics</NavDropdown.Item></Link>
+            <Link to={'/product-category/103'} style={{textDecoration:"none", color:"black"}}>  <NavDropdown.Item href='/product-category/104'>Women's clothing</NavDropdown.Item></Link>
+
             </NavDropdown>
     <div className='cart-right-section ms-1' >
     <Link   to={"/addcart"} id='' className='cartLink' > 
