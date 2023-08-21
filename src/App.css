@@ -3,3 +3,44 @@
     padding: 0;
     width: 100%;
 }
+#addcard-button{
+    height: 40px;
+    background-color: rgba(145, 147, 188, 0.385);
+    border:none;
+    display:flex;
+    width: 12%;
+}
+#addcard-button:hover{
+    background-color: rgba(145, 147, 188, 0.385);
+    color: rgb(2, 16, 98);
+}
+#badge{
+    display:contents;
+    font-size: 12px;
+    color: red;
+}
+.cart-counts{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff398f;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.cart-right-section{
+    width: 32px;
+    position: relative;
+}
+@media screen and (max-width: 999px){
+    #addcard-button{
+        width: 24%;
+        height: 35x;
+      }
+
+}

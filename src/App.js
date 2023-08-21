@@ -1,25 +1,33 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
-import Header from './Components/Header';
+import { Header } from './Components/Header';
 import Footer from './Components/Footer';
 import ReadMore from './Components/ReadMore';
 import Productview from './Components/Productview';
 import Productcategory from './Components/Productcategory';
-// import Product from './Components/Product';
+import {Addcards} from './Components/Addcards';
+import HideNaveBar from './Components/HideNaveBar';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <HideNaveBar>
+        <Header/>
+        </HideNaveBar>
       <Routes>
-        <Route path='/Reactdemo' element={<Home/>}></Route>
+        <Route path='/xinstore-redux-' element={<Home/>}></Route>
         <Route path='/product-category/:id' element={<Productcategory/>}></Route>
-        {/* <Route path='/product/:id' element={<Product/>}></Route> */}
         <Route path='/product/:id' element={<Productview/>}></Route>
         <Route path='readmore' element={<ReadMore/>}></Route>
-      </Routes>
+        <Route path='/addcart' element={<Addcards/>}></Route>
+
+      </Routes> 
       <Footer/>
+      {/* <Routes>
+      </Routes> */}
+      {/* <Routes>
+      </Routes> */}
     </div>
   );
 }

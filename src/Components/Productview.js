@@ -1,20 +1,24 @@
-import React from 'react'
+import {React} from 'react'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdAttachMoney } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import ReadMore from './ReadMore';
+import CartButtons from '.';
 
 function Productview() {
+  //? get params id or pathID
     const params=useParams()
-    // console.log(params);
+    //? get addcart count and catList
+    const {cartCount,cartList}=useSelector(state=>state.cart)
+    //? get products
+    // console.log(cartList);
     const {products}=useSelector(state=>state.productReducer)
+    //? find same product
     const product= products.find(item=>item.id==params.id)
-
   return (
 <>
 {
@@ -25,8 +29,7 @@ function Productview() {
       <Card.Img variant="top" src={product.image} style={{height:"400px",width:"80%"}}className='container'/>
       <Card.Body >
         <Row className='container'>
-         <Col> <Button variant="danger p-3" >ADD TO CART</Button></Col>
-          <Col><Button variant="primary p-3">BUY NOW</Button></Col>
+          <CartButtons product={product} />
         </Row>
       </Card.Body>
     </Card></Col>

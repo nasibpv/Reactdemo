@@ -1,21 +1,24 @@
 .row{
-    margin-top: 25px;
+    margin-top: 2px;
  }
- .card{
+ .cards{
  text-align: center;
  margin: 10px;
  transform: scale(1.01);
  padding-top:8px;
-height: 360px;
+min-height:250px;
  width: "13rem";
 
  }
-
+#product-image{
+  width: 90%;
+  margin-left: 10px;
+}
  
  .card-title{
     font-weight: bold;
  }
- .card:hover .card-img{
+ .cards:hover .card-img{
    transform: scale(1.03);
  }
  @media screen and (max-width: 450px){
@@ -40,22 +43,19 @@ height: 360px;
     width: 90%;
   }
  }
- @media screen and (max-width: 575px){
+ @media screen and (max-width: 572px){
     
   #product-card{
       width: 82%;
       padding: 5px;
-      height: 150px;
+      height: 389px;
       margin: 10px;
       margin-left: 50px;
   }
   #product-div{
-    
-    /* margin-left: 15px; */
-    padding: 0;
+        padding: 0;
   }
   #product-image{
-    /* align-items: center; */
     margin-left: 15px;
     margin-top: 10px;
     height:220px ;
@@ -65,4 +65,70 @@ height: 360px;
   #product-title{
     font-size: 22px;
   }
+
  }
+ @media screen and (max-width: 460px){
+    
+  #product-card{
+      width: 80%;
+      padding: 5px;
+      height: 400px;
+      margin: 10px;
+      margin-left: 45px;
+  }
+  #product-div{
+        padding: 0;
+  }
+  #product-image{
+    margin-left: 15px;
+    margin-top: 10px;
+    height:220px ;
+    width: 90%;
+    padding: 12px;
+  }
+  #product-title{
+    font-size: 22px;
+  }
+
+ }
+
+ @media screen and (max-width: 380px){
+    
+  #product-card{
+    padding-left: 0;
+      width: 80%;
+      padding: 3px;
+      /* max-height: 410px; */
+      height: auto;
+      margin-left: 35px;
+
+  }
+  #product-div{
+        padding: 0;
+  }
+  #product-image{
+    margin-top: 10px;
+    width: 85%;
+    padding: 12px;
+  }
+  #product-title{
+    font-size: 20px;
+  }
+ }
+
+  @media screen and (min-width: 590px){
+    #product-card{
+        height: 350px;
+        margin: 10px;
+    }
+   }
+   @media screen and (min-width: 994px){
+    
+    #product-card{
+        width: 90%;
+        padding: 1px;
+        height: 475px;
+        margin: 10px;
+        margin-left: 15px;
+    }
+   }

@@ -1,0 +1,135 @@
+:root{
+    --transition: all 0.2s ease-in-out;
+    --bg-circles:rgb(95,199,255)
+}
+
+#addCard{
+    height: 110px;
+    padding: 15px;
+    /* margin-left: 15px; */
+}
+.after-cart{
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* top: 50px; */
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out
+}
+.cart-counter{
+    text-align: center;
+    margin: 0 11px;
+    width: 50px;
+}
+.cart-counter-button{
+    color: whitesmoke;
+    background-color:rgb(7, 7, 7);
+    width: 25px;
+    height: 25px;
+    border-radius: 4.5px;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+}
+.cart-nav{
+    width: 100%;
+    height: 70px;
+    background-color: #24316bdb;
+    color: whitesmoke;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* backdrop-filter: contrast(2.5); */
+}
+.cart-nav-head{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.cart-nav-close-button{
+    width: 10%;
+    padding: 0px;
+    background-color: rgba(236, 236, 236, 0.021);
+    /* background-color: #24316bdb; */
+   
+    border: none;
+    color: #a50b50;
+    font-size: 27px;
+    font-weight: bold;
+}
+#cart-row{
+    height: auto;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding: 10px;
+    column-gap: 5px;
+}
+#add-image-cart{
+    width: 100%;
+     /* min-height: 140px; */
+     /* top: 5px; */
+ }
+#add-cart-image{
+    height:100px;
+    margin-top: 20px;
+    width:100%;
+}
+#cart-content-card,#add-image-cart{
+    height:180px;
+}
+#cart-content-card{
+    border: none;
+}
+#cart-content-body{
+    padding: 10px;
+
+}
+@media screen and (max-width: 575px){
+    #addcart{
+        width: 50%;
+        
+    }
+    #add-image-cart{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #add-cart-image{
+        width: 80%;
+    }
+    #add-image-col{
+        width: 35%;
+        margin: 0;
+    }
+    #cart-content-col{
+        width: 63%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1050px){
+    #cart-content-card,#add-image-cart{
+        height:210px;
+    }
+    #add-cart-image{
+        width: 90%;
+        height: 180px;
+    }
+    #cart-content-body{
+        padding: 5px;
+        margin-top: 25px;
+        }
+}
+@media screen and (min-width: 1250px){
+    #cart-content-card,#add-image-cart{
+        height:250px;
+    }
+    #add-cart-image{
+        width: 90%;
+        height: 200px;
+    }
+    #cart-content-body{
+        padding: 1px;
+        margin-top: 50px;
+        }
+}

@@ -1,4 +1,4 @@
-import {React,useState,useEffect} from 'react'
+import {React,useEffect} from 'react'
 import Products from './Products';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,22 +9,10 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 
 function Home() {
-    // var [products,setProduct]=useState([])
-    
-    // const getData = ()=>{
-    //   fetch('./products.json',{headers :{
-    //     'content-Type':'appication/json',
-    //     'Accept':'application/json'
-    //   }}).then((response)=>{
-    //     return response.json(0)
-    //   }).then((myjson)=>{
-    //     setProduct(myjson)
-    //   })
-    // }
     const dispatch=useDispatch()
 
     useEffect(()=>{
-    //   getData()
+    //?   getData()
       dispatch(productList())
     },[])
     const {products}=useSelector(state=>state.productReducer)
