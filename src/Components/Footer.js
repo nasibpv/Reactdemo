@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className=' bg-primary '>
         <Row className='ps-3 text-white text-center mt-2' style={{width:'100%'}}>
-              <p><a style={{margin:'5px'}}><RiShoppingBag2Fill style={{height:"20px",width:'20px'}} className='text-info'/> Become a Seller</a> <a style={{margin:'5px'}}><MdStars style={{height:"20px",width:'20px'}} className='text-info'/> Advertise </a><a style={{margin:'5px'}}><PiGiftFill style={{height:"20px",width:'20px'}} className='text-info'/> GIft Cards</a><a style={{margin:'5px'}}><BiSolidHelpCircle style={{height:"20px",width:'20px'}} className='text-info'/> Help Center</a> 2023 XinStore.com</p>
+              <p><a href='/xinstore-redux-' style={{margin:'5px'}}><RiShoppingBag2Fill style={{height:"20px",width:'20px'}} className='text-info'/> Become a Seller</a> <a href='/xinstore-redux-' style={{margin:'5px'}}><MdStars style={{height:"20px",width:'20px'}} className='text-info'/> Advertise </a><a href='/xinstore-redux-' style={{margin:'5px'}}><PiGiftFill style={{height:"20px",width:'20px'}} className='text-info'/> GIft Cards</a><a href='/xinstore-redux-' style={{margin:'5px'}}><BiSolidHelpCircle style={{height:"20px",width:'20px'}} className='text-info'/> Help Center</a> 2023 XinStore.com</p>
         </Row>
     </div>
   )

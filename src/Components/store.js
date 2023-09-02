@@ -1,8 +1,8 @@
-import { createStore,combineReducers,applyMiddleware } from "redux";
+// import { createStore,combineReducers,applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { restReducer,cartReducer } from "../Reducers/restReducer"; 
 import { configureStore } from "@reduxjs/toolkit";
-// ?other methode
+// ? other methode
 //createreducer 
 // const reducer=combineReducers({
 //     productReducer:restReducer,
@@ -19,7 +19,7 @@ import { configureStore } from "@reduxjs/toolkit";
     const store=configureStore({
         reducer:{
             productReducer:restReducer,
-            cart:cartReducer
+            cart:cartReducer,
         },
         middleware:[thunk]
         

@@ -32,7 +32,7 @@ export const cartList = ()=>async(dispatch)=>{
         const {data} =await axios.get('./products.json')
 
     // console.log(result.data);
-    // console.log(data);
+    console.log(data);
     dispatch(
         {
             payload:data.products,

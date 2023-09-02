@@ -8,27 +8,35 @@ import { MdAttachMoney } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import ReadMore from './ReadMore';
 import CartButtons from '.';
+import WishlistBtn from './WishlistBtn';
+
 
 function Productview() {
   //? get params id or pathID
     const params=useParams()
     //? get addcart count and catList
-    const {cartCount,cartList}=useSelector(state=>state.cart)
+    // const {cartCount,cartList}=useSelector(state=>state.cart)
     //? get products
-    // console.log(cartList);
+    
     const {products}=useSelector(state=>state.productReducer)
+    // console.log(products);
     //? find same product
-    const product= products.find(item=>item.id==params.id)
+    const product= products.find(item=>(item.id)==params.id)
   return (
 <>
 {
     product?(
       <div style={{minHeight:"88vh"}}>
+        
         <Row className='w-100 p-0 m-0' >
           <Col lg={6} md={6} style={{minHeight:"70vh",padding:"20px"}}>
           <Card style={{ width: 'auto',  }}>
+          <div  className='wishlist' >
+            <WishlistBtn product={product}/>
+          </div>
         <Card.Img variant="top" src={product.image} style={{height:"400px",width:"80%"}}className='container'/>
         <Card.Body >
+        
           <Row className='container'>
             <CartButtons product={product} />
           </Row>

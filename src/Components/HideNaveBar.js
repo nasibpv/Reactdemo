@@ -6,7 +6,7 @@ const [showNavBar,setShowNavBar]=useState(false)
 useEffect(()=>{
     //? get current path
     // console.log('this is locatin', location.pathname);
-    if(location.pathname==='/addcart'){
+    if(location.pathname==='/addcart' | location.pathname==='/wishlist' ){
         setShowNavBar(false)
     }
     else{

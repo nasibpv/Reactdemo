@@ -26,7 +26,7 @@ const goBack=()=>{
         <div style={{minHeight:'90vh',padding:'10px'}}>
             {
                 cartList.map(item=>(
-                <Row className=' border border-round' id='cart-row'>
+                <Row className=' border border-round mb-1' id='cart-row'>
                 <Col lg={4} md={3} sm={3} style={{padding:"0px"}} className='container' id='add-image-col'>
                 <Card className='container' id='add-image-cart'>
               <Card.Img variant="top" src={item.image}  id='add-cart-image' className='container p-0'/>

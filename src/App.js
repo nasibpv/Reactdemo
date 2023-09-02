@@ -8,6 +8,7 @@ import Productview from './Components/Productview';
 import Productcategory from './Components/Productcategory';
 import {Addcards} from './Components/Addcards';
 import HideNaveBar from './Components/HideNaveBar';
+import {Wishlist} from './Components/Wishlist';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path='/product/:id' element={<Productview/>}></Route>
         <Route path='readmore' element={<ReadMore/>}></Route>
         <Route path='/addcart' element={<Addcards/>}></Route>
-
+        <Route path='/wishlist' element={<Wishlist/>}></Route>
       </Routes> 
       <Footer/>
       {/* <Routes>
