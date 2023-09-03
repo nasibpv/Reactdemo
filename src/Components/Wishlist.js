@@ -37,7 +37,7 @@ const goBack=()=>{
               <Card.Body id='cart-content-body p-3'>
                 <Card.Title>{item.title}</Card.Title>
                 <div className='row ms-1 mb-3 w-100'>
-            <div style={{maxWidth:"30%"}} className='bg-success col-lg-5 col-md-3 col-sm-6 rounded text-light '>{item.rating.rate} <AiFillStar style={{width:"25%" ,height:"20px"}}/></div>
+            <div style={{maxWidth:"35%"}} className='bg-success col-lg-5 col-md-3 col-sm-6 rounded text-light '>{item.rating.rate} <AiFillStar style={{width:"33%" ,height:"22px"}}/></div>
             <div className='w-50 col-lg-9 col-md-7 col-sm-3 text-muted'>({item.rating.count})</div>
           </div>
                 <Card.Subtitle className="mb mt-2" style={{height:"30px",fontSize:"larger"}}><MdAttachMoney style={{width:"8%" ,height:"30px"}}/>{item.price} </Card.Subtitle>
