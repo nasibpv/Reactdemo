@@ -20,7 +20,7 @@ function Productcategory() {
           </Col>
           
         ))
-      }n
+      }
 
     </Row>
   )

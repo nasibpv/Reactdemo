@@ -29,12 +29,12 @@ function Productview() {
       <div style={{minHeight:"88vh"}}>
         
         <Row className='w-100 p-0 m-0' >
-          <Col lg={6} md={6} style={{minHeight:"70vh",padding:"20px"}}>
+          <Col lg={6} md={6} style={{maxHeight:"70vh",padding:"20px"}}>
           <Card style={{ width: 'auto',  }}>
           <div  className='wishlist' >
             <WishlistBtn product={product}/>
           </div>
-        <Card.Img variant="top" src={product.image} style={{height:"400px",width:"80%"}}className='container'/>
+        <Card.Img variant="top" src={product.image} style={{height:"300px",width:"80%"}}className='container'/>
         <Card.Body >
         
           <Row className='container'>
@@ -48,7 +48,7 @@ function Productview() {
           <Card.Title>{product.title}</Card.Title>
           <div className='row ms-1 mb-3 '>
             <div className='bg-success w-25 col-lg-2 col-md-3 col-sm-2 rounded text-light '>{product.rating.rate} <AiFillStar style={{width:"25%" ,height:"20px"}}/></div>
-            <div className='col-lg-9 col-md-9 col-sm-8 text-muted'>{product.rating.count} Ratings</div>
+            <div className='col-lg-9 col-md-9 col-sm-6 text-muted w-50'>{product.rating.count} Ratings</div>
           </div>
           <Card.Subtitle className="mb-2 " style={{height:"30px",fontSize:"larger"}}><MdAttachMoney style={{width:"8%" ,height:"30px"}}/>{product.price}</Card.Subtitle>
           <Card.Text>

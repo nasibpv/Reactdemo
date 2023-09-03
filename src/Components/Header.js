@@ -36,7 +36,7 @@ export function Header() {
 
             </NavDropdown>
 
-              <Link className='header-links me-1' id='header-links' to={'/wishlist'}  ><AiFillHeart style={{width:"20px",marginTop:"-2px"}}/>Wishlist</Link>
+              <Link className='header-links me-3' id='header-links' to={'/wishlist'}  ><AiFillHeart style={{width:"20px",marginTop:"-2px"}}/>Wishlist</Link>
   
    <div className='cart-right-section ms-1' >
     <Link   to={"/addcart"} id='' className='cartLink' > 
