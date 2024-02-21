@@ -25,10 +25,7 @@ function App() {
         <Route path='/wishlist' element={<Wishlist/>}></Route>
       </Routes> 
       <Footer/>
-      {/* <Routes>
-      </Routes> */}
-      {/* <Routes>
-      </Routes> */}
+      
     </div>
   );
 }

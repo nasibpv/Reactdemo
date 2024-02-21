@@ -1,7 +1,7 @@
 import {React, useMemo} from 'react'
 import { AiFillHeart,AiOutlineHeart } from "react-icons/ai";
 import { useDispatch, useSelector } from 'react-redux';
-import { addToWishList,removeToWishList } from '../Reducers/restReducer';
+import  { addToWishList,removeToWishList } from '../Reducers/restReducer';
 
 function WishlistBtn({product}) {
   // console.log(product);

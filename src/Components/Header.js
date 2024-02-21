@@ -8,13 +8,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useSelector } from 'react-redux';
 import { AiFillHeart } from "react-icons/ai";
 
+
 export function Header() {
   const {cartList =[]}=useSelector((state)=>state.cart)  // 
   // cartList {{count} {count} {count}}=total
   // total cart 
   // const totalCartCartCount=cartList.reduce((acc,value)=>(acc+=value,count),0)
   // console.log(totalCartCount);
-  
   return (
     <>  
         <Navbar bg="primary" data-bs-theme="dark" style={{width:'auto'}}>
@@ -23,6 +23,8 @@ export function Header() {
           <Nav className="me-auto">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='justify-content-end text-center ' id="basic-navbar-nav">
+        <Link className='header-links me-3' id='header-links' >ABOUT</Link>
+{/* <a href='#'>ABOUT</a> */}
             <NavDropdown title="Category" id="basic-nav-dropdown" className='header-dropdown-links me-3'>
            <Link to={'/product-category/101'} style={{textDecoration:"none", color:"black"}}>
                 <NavDropdown.Item href='/product-category/101'>Men's Clothing</NavDropdown.Item>
@@ -30,9 +32,8 @@ export function Header() {
             </Link>              
              <Link to={'/product-category/106'} style={{textDecoration:"none", color:"black"}}> <NavDropdown.Item href='/product-category/106'>Bags & backpacks</NavDropdown.Item></Link>
              <Link to={'/product-category/102'} style={{textDecoration:"none", color:"black"}}> <NavDropdown.Item href='/product-category/102'>Jewelery</NavDropdown.Item></Link>
-              {/* <NavDropdown.Divider /> */}
             <Link to={'/product-category/103'} style={{textDecoration:"none", color:"black"}}>  <NavDropdown.Item href='/product-category/103'>Electronics</NavDropdown.Item></Link>
-            <Link to={'/product-category/103'} style={{textDecoration:"none", color:"black"}}>  <NavDropdown.Item href='/product-category/104'>Women's clothing</NavDropdown.Item></Link>
+            <Link to={'/product-category/104'} style={{textDecoration:"none", color:"black"}}>  <NavDropdown.Item href='/product-category/104'>Women's clothing</NavDropdown.Item></Link>
 
             </NavDropdown>
 

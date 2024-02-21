@@ -6,6 +6,7 @@ import '../Stylesheet/Products.css'
 import { productList } from '../Actions/reastaction';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
+import About from './About';
 
 
 function Home() {
@@ -13,20 +14,22 @@ function Home() {
 
     useEffect(()=>{
     //?   getData()
-      dispatch(productList())
-    },[])
+      dispatch(productList());
+    })
     const {products}=useSelector(state=>state.productReducer)
   return (
-    <Row className='ps-3 w-100'>
-      {
-        products.map(item => (
-          <Col lg={2} md={4} sm={6} xsm={6} id='product-div'>
-            <Products prodData={item}></Products>
-          </Col>
-        ))
-      }
-
-    </Row>
+   <div className='m-0 p-0'>
+      <Row className='ps-0 m-0 w-100'>
+        {
+          products?.map(item => (
+            <Col lg={2} md={4} sm={6} xsm={6} id='product-div'>
+              <Products prodData={item}></Products>
+            </Col>
+          ))
+        }
+    <About name='RT'/>
+      </Row>
+   </div>
   )
 }
 

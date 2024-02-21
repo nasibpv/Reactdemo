@@ -19,7 +19,6 @@ function Product({prodData}) {
                 <Card.Text>{prodData.category}</Card.Text>
               </Card.Body>
               </Link>
-
          </Card>
     
     </div>
