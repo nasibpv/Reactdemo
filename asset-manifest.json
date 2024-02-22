@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/xinstore-redux-/static/css/main.28bce059.css",
-    "main.js": "/xinstore-redux-/static/js/main.22ba5dbd.js",
+    "main.js": "/xinstore-redux-/static/js/main.feda4da2.js",
     "static/js/787.f055211e.chunk.js": "/xinstore-redux-/static/js/787.f055211e.chunk.js",
     "index.html": "/xinstore-redux-/index.html",
     "main.28bce059.css.map": "/xinstore-redux-/static/css/main.28bce059.css.map",
-    "main.22ba5dbd.js.map": "/xinstore-redux-/static/js/main.22ba5dbd.js.map",
+    "main.feda4da2.js.map": "/xinstore-redux-/static/js/main.feda4da2.js.map",
     "787.f055211e.chunk.js.map": "/xinstore-redux-/static/js/787.f055211e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28bce059.css",
-    "static/js/main.22ba5dbd.js"
+    "static/js/main.feda4da2.js"
   ]
 }
